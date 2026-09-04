@@ -3,14 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="可话花园：一个纯前端的可话回忆查看站点，离线浏览你在可话留下的文字、图片与视频。" />
-  <title>可话花园</title>
+  <meta name="description" content="可话花园是一款免费的纯前端可话动态查看器，可在浏览器本地导入可话导出文件夹或 ZIP，整理并浏览过去的文字、图片与视频，数据不会上传服务器。" />
+  <meta name="keywords" content="可话花园,可话动态,可话回忆,可话导出,可话数据查看器,本地相册,离线浏览" />
+  <meta name="author" content="JackMeds" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#be123c" />
+
+  <link rel="canonical" href="https://jackmeds.github.io/kehua-memory-garden/" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:url" content="https://jackmeds.github.io/kehua-memory-garden/" />
+  <meta property="og:site_name" content="可话花园" />
+  <meta property="og:title" content="可话花园 - 本地安全地浏览可话回忆" />
+  <meta property="og:description" content="在浏览器本地导入可话导出文件夹或 ZIP，重新浏览文字、图片与视频；纯前端运行，数据不会上传服务器。" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="可话花园 - 本地安全地浏览可话回忆" />
+  <meta name="twitter:description" content="免费的纯前端可话动态查看器，支持文件夹和 ZIP 导入，所有数据仅在浏览器本地处理。" />
+
+  <title>可话花园 - 可话动态与回忆本地查看器</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "可话花园",
+      "alternateName": "可话动态查看器",
+      "url": "https://jackmeds.github.io/kehua-memory-garden/",
+      "description": "免费的纯前端可话动态与回忆查看器，可在浏览器本地导入可话导出文件夹或 ZIP，浏览文字、图片与视频。",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Requires JavaScript. Requires a modern web browser.",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "featureList": [
+        "导入可话导出文件夹",
+        "导入 ZIP 压缩包",
+        "按时间线浏览可话动态",
+        "整理并浏览图片与视频",
+        "所有数据仅在浏览器本地处理"
+      ],
+      "codeRepository": "https://github.com/JackMeds/kehua-memory-garden"
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <main style="max-width: 760px; margin: 0 auto; padding: 32px 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #27272a; line-height: 1.7;">
+      <h1>可话花园</h1>
+      <p>可话花园是一款免费的纯前端可话动态查看器，用来重新浏览可话导出包里的文字、图片与视频。</p>
+      <h2>本地处理，保护回忆隐私</h2>
+      <p>你可以导入解压后的可话文件夹或 ZIP 压缩包。解析、整理和展示均在浏览器本地完成，数据不会上传到服务器。</p>
+      <h2>主要功能</h2>
+      <ul>
+        <li>按时间线浏览过去的可话动态</li>
+        <li>集中查看导出包中的图片与视频</li>
+        <li>支持文件夹和 ZIP 两种导入方式</li>
+        <li>无需注册，也不依赖后端服务</li>
+      </ul>
+      <noscript><p>请启用 JavaScript 以导入并浏览你的可话数据。</p></noscript>
+    </main>
+  </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

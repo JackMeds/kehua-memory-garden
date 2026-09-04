@@ -41,6 +41,12 @@ npm run build
 
 构建产物会输出到 `dist` 目录。仓库已经配置了自动部署流程，推送到主分支后会自动发布到 GitHub Pages。
 
+## 搜索引擎收录
+
+站点已包含 canonical、Open Graph、结构化数据、`robots.txt` 和 `sitemap.xml`。部署后可在 Google Search Console、Bing Webmaster Tools 等平台提交下面的站点地图，加快首次发现与收录：
+
+`https://jackmeds.github.io/kehua-memory-garden/sitemap.xml`
+
 ## 适合谁
 
 - 想长期保存可话导出内容的人

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jackmeds.github.io/kehua-memory-garden/sitemap.xml
