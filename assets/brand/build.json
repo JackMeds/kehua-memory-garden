@@ -1,7 +1,7 @@
 {
   "toolkit": "JackMeds/github-brand",
   "version": "1.0.0",
-  "manifestSha256": "f74a65cf73e3b4bce17ad91dd42061fe231c6e9970f8979cc06d91ca01d16006",
+  "manifestSha256": "ffdb192d292187ef3760f119611130782af6ded2ae09f3074590e772f6cc46ea",
   "fonts": {
     "InstrumentSans.ttf": "b24f1812584816958afcf22e22d08e44318c5e51651e25d2438efdde389b33b1",
     "IBMPlexMono-Regular.ttf": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
