@@ -86,9 +86,9 @@ export default function WelcomeUpload({ onDirectoryPick, onDirectoryDrop, onFile
           </svg>
         </div>
 
-        <h1 className="welcome-title">可话 · 动态查看器</h1>
+        <h1 className="welcome-title">可话花园 · 动态查看器</h1>
         <p className="welcome-desc">
-          浏览你在可话留下的珍贵记忆<br />
+          在浏览器本地整理并浏览可话导出包里的文字、图片与视频<br />
           <span className="welcome-note">纯前端运行 · 数据不上传至任何服务器</span>
         </p>
 
@@ -181,6 +181,11 @@ export default function WelcomeUpload({ onDirectoryPick, onDirectoryDrop, onFile
         </div>
 
         <div className="welcome-footer">
+          <nav className="welcome-links" aria-label="项目说明">
+            <a href="/guide/">使用指南</a>
+            <a href="/about/">关于项目</a>
+            <a href="/privacy/">隐私说明</a>
+          </nav>
           <p className="welcome-privacy">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
@@ -190,7 +195,7 @@ export default function WelcomeUpload({ onDirectoryPick, onDirectoryDrop, onFile
           </p>
           <p className="welcome-oss">
             开源项目 · MIT License ·
-            <a href="https://github.com/JackMeds" target="_blank" rel="noopener">JackMeds</a>
+            <a href="https://github.com/JackMeds/kehua-memory-garden" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
           </p>
         </div>
       </div>

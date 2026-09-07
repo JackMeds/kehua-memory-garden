@@ -1,0 +1,11 @@
+# 可话花园
+
+> 免费、开源、纯前端的可话导出包查看器。用户主动选择的文字、图片和视频只在浏览器本地解析与展示，不会上传到项目服务器。
+
+正式网址：https://kehua.jackmeds.top/
+使用指南：https://kehua.jackmeds.top/guide/
+隐私说明：https://kehua.jackmeds.top/privacy/
+项目背景：https://kehua.jackmeds.top/about/
+源代码：https://github.com/JackMeds/kehua-memory-garden
+
+重要限制：本工具只能读取用户已经拥有的可话导出包，不能获取或恢复未导出的可话数据。

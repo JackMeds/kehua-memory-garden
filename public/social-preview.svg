@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf7"/><stop offset="1" stop-color="#fff1f2"/></linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e11d48"/><stop offset="1" stop-color="#9f1239"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="45"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1080" cy="80" r="210" fill="#fda4af" opacity=".28" filter="url(#blur)"/>
+  <circle cx="80" cy="600" r="190" fill="#fecdd3" opacity=".45" filter="url(#blur)"/>
+  <rect x="86" y="96" width="116" height="116" rx="30" fill="url(#rose)"/>
+  <text x="144" y="174" text-anchor="middle" font-family="STHeiti" font-weight="700" font-size="58" fill="white">可</text>
+  <text x="86" y="318" font-family="STHeiti" font-weight="760" font-size="76" fill="#18181b">可话花园</text>
+  <text x="86" y="394" font-family="STHeiti" font-weight="600" font-size="42" fill="#881337">动态查看器</text>
+  <text x="88" y="473" font-family="STHeiti" font-size="28" fill="#52525b">在浏览器本地，重新浏览你的文字、图片与视频</text>
+  <rect x="88" y="520" width="395" height="48" rx="24" fill="#ffffff" stroke="#fecdd3"/>
+  <text x="285" y="552" text-anchor="middle" font-family="STHeiti" font-weight="600" font-size="20" fill="#9f1239">纯前端运行 · 数据不上传</text>
+</svg>

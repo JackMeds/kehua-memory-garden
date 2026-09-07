@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jackmeds.github.io/kehua-memory-garden/</loc>
-    <lastmod>2026-09-04</lastmod>
-  </url>
+  <url><loc>https://kehua.jackmeds.top/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://kehua.jackmeds.top/guide/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://kehua.jackmeds.top/guide/import-folder.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://kehua.jackmeds.top/guide/import-zip.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://kehua.jackmeds.top/guide/local-privacy.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://kehua.jackmeds.top/about/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://kehua.jackmeds.top/privacy/</loc><lastmod>2026-09-07</lastmod></url>
 </urlset>

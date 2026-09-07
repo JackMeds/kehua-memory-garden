@@ -1,4 +1,7 @@
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: *
 Allow: /
 
-Sitemap: https://jackmeds.github.io/kehua-memory-garden/sitemap.xml
+Sitemap: https://kehua.jackmeds.top/sitemap.xml

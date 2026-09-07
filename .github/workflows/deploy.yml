@@ -38,6 +38,9 @@ jobs:
       - name: 构建站点
         run: npm run build
 
+      - name: 校验 SEO
+        run: npm run check:seo
+
       - name: 配置 Pages
         uses: actions/configure-pages@v5
 

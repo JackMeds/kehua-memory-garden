@@ -16,7 +16,7 @@
 
 项目部署完成后，可以直接通过下面这个地址访问：
 
-[在线打开可话花园](https://jackmeds.github.io/kehua-memory-garden/)
+[在线打开可话花园](https://kehua.jackmeds.top/)
 
 如果你是第一次在手机上使用，推荐先把可话导出的文件夹压缩成一个 ZIP，再在网页里导入，这样兼容性和操作体验会更好。
 
@@ -43,9 +43,11 @@ npm run build
 
 ## 搜索引擎收录
 
-站点已包含 canonical、Open Graph、结构化数据、`robots.txt` 和 `sitemap.xml`。部署后可在 Google Search Console、Bing Webmaster Tools 等平台提交下面的站点地图，加快首次发现与收录：
+站点已包含独立内容页、canonical、Open Graph、结构化数据、`robots.txt`、`llms.txt` 和 `sitemap.xml`。站点地图已提交到 `jackmeds.top` 的 Google Search Console Domain Property：
 
-`https://jackmeds.github.io/kehua-memory-garden/sitemap.xml`
+`https://kehua.jackmeds.top/sitemap.xml`
+
+生产站点继续由免费的 GitHub Pages 托管，`kehua.jackmeds.top` 通过 Cloudflare DNS 指向 Pages。匿名访问与性能统计使用独立的 Cloudflare Web Analytics，不接入 GA4。
 
 ## 适合谁
 

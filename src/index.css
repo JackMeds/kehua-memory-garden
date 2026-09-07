@@ -594,6 +594,11 @@ button { font-family: inherit; }
 
 .welcome-footer { margin-top: 32px; }
 .welcome-footer p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.8; }
+.welcome-links {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 18px;
+  margin-bottom: 10px; font-size: 0.82rem;
+}
+.welcome-links a { color: var(--accent); font-weight: 600; }
 .welcome-privacy {
   display: flex; align-items: center; justify-content: center; gap: 6px;
   color: #16a34a !important; font-weight: 500;
@@ -648,4 +653,3 @@ button { font-family: inherit; }
   .welcome-title { font-size: 1.5rem; }
   .upload-zone { padding: 32px 20px; }
 }
-
