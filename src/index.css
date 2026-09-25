@@ -593,6 +593,10 @@ button { font-family: inherit; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
 
 .welcome-footer { margin-top: 32px; }
+.public-overview { text-align: left; margin-top: 36px; padding: 24px; background: var(--bg-card); border-radius: 16px; color: var(--text-secondary); font-size: .95rem; }
+.public-overview h2 { color: var(--text-primary); font-size: 1.15rem; margin: 20px 0 8px; }
+.public-overview p { margin: 10px 0; }
+.public-overview ul { padding-left: 22px; }
 .welcome-footer p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.8; }
 .welcome-links {
   display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 18px;

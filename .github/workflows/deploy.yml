@@ -40,6 +40,18 @@ jobs:
 
       - name: 校验 SEO
         run: npm run check:seo
+      - name: Install isolated CI browser
+        run: npx playwright install --with-deps chromium
+      - name: Verify rendered production pages
+        run: node scripts/check-rendered-seo.mjs
+        env:
+          SEO_REPORT_DIR: seo-evidence
+      - name: Save rendered SEO evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-evidence
+          path: seo-evidence
 
       - name: 配置 Pages
         uses: actions/configure-pages@v5

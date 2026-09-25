@@ -1,23 +1,24 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const root = process.cwd();
+// Validate what Pages publishes, not the source tree.
+const root = join(process.cwd(), 'dist');
 const origin = 'https://kehua.jackmeds.top';
 const pages = new Map([
   ['/', 'index.html'],
-  ['/guide/', 'public/guide/index.html'],
-  ['/guide/import-folder.html', 'public/guide/import-folder.html'],
-  ['/guide/import-zip.html', 'public/guide/import-zip.html'],
-  ['/guide/local-privacy.html', 'public/guide/local-privacy.html'],
-  ['/about/', 'public/about/index.html'],
-  ['/privacy/', 'public/privacy/index.html'],
+  ['/guide/', 'guide/index.html'],
+  ['/guide/import-folder.html', 'guide/import-folder.html'],
+  ['/guide/import-zip.html', 'guide/import-zip.html'],
+  ['/guide/local-privacy.html', 'guide/local-privacy.html'],
+  ['/about/', 'about/index.html'],
+  ['/privacy/', 'privacy/index.html'],
 ]);
 
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
 const extract = (html, pattern) => html.match(pattern)?.[1];
 
-const sitemap = readFileSync(join(root, 'public/sitemap.xml'), 'utf8');
+const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 check(sitemapUrls.length === pages.size, `sitemap 应有 ${pages.size} 个 URL，实际为 ${sitemapUrls.length}`);
 check((sitemap.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g) || []).length === pages.size, '每个 sitemap URL 都必须包含 lastmod');
@@ -48,7 +49,7 @@ for (const [pathname, relativeFile] of pages) {
   }
 }
 
-const pngPath = join(root, 'public/social-preview.png');
+const pngPath = join(root, 'social-preview.png');
 check(existsSync(pngPath), '缺少 social-preview.png');
 if (existsSync(pngPath)) {
   const png = readFileSync(pngPath);
@@ -56,11 +57,11 @@ if (existsSync(pngPath)) {
   check(png.readUInt32BE(16) === 1200 && png.readUInt32BE(20) === 630, 'social-preview.png 必须为 1200×630');
 }
 
-const robots = readFileSync(join(root, 'public/robots.txt'), 'utf8');
+const robots = readFileSync(join(root, 'robots.txt'), 'utf8');
 check(robots.includes('User-agent: OAI-SearchBot'), 'robots.txt 缺少 OAI-SearchBot');
 check(robots.includes(`Sitemap: ${origin}/sitemap.xml`), 'robots.txt sitemap 地址不正确');
-check(readFileSync(join(root, 'public/CNAME'), 'utf8').trim() === 'kehua.jackmeds.top', 'CNAME 内容不正确');
-check(existsSync(join(root, 'public/llms.txt')) && existsSync(join(root, 'public/agents.md')), '缺少 AI 发现文件');
+check(readFileSync(join(root, 'CNAME'), 'utf8').trim() === 'kehua.jackmeds.top', 'CNAME 内容不正确');
+check(existsSync(join(root, 'llms.txt')) && existsSync(join(root, 'agents.md')), '缺少 AI 发现文件');
 
 if (failures.length) {
   console.error(`SEO 校验失败（${failures.length} 项）：\n- ${failures.join('\n- ')}`);

@@ -1,4 +1,5 @@
 import { useRef, useCallback, useState } from 'react';
+import overview from '../public-overview.html?raw';
 
 export default function WelcomeUpload({ onDirectoryPick, onDirectoryDrop, onFileInput, onZipUpload, isLoading, loadingMsg, hasModernAPI }) {
   const fileInputRef = useRef(null);
@@ -180,6 +181,7 @@ export default function WelcomeUpload({ onDirectoryPick, onDirectoryDrop, onFile
           )}
         </div>
 
+        <section className="public-overview" aria-label="可话花园使用说明" dangerouslySetInnerHTML={{ __html: overview }} />
         <div className="welcome-footer">
           <nav className="welcome-links" aria-label="项目说明">
             <a href="/guide/">使用指南</a>
