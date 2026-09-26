@@ -1,4 +1,10 @@
-# 可话花园
+# 可话花园 · Kehua Memory Garden
+
+**可话导出包查看器：在浏览器本地导入文件夹或 ZIP，按时间浏览已导出的文字、图片和视频。**
+
+Kehua Memory Garden is a local-first viewer for existing Kehua exports. Import an exported folder or ZIP to browse posts, photos and videos in your browser; imported content is not uploaded to a server.
+
+[在线使用](https://kehua.jackmeds.top/) · [使用指南](https://kehua.jackmeds.top/guide/) · [隐私说明](https://kehua.jackmeds.top/privacy/)
 
 可话停运之后，很多人都把自己的记录、图片和情绪留在了导出包里。这个项目做的事情很简单：把那些原本只适合存档的数据，重新变成一个可以在浏览器里安静翻看的个人回忆网站。
 
@@ -14,11 +20,17 @@
 
 ## 在线访问
 
-项目部署完成后，可以直接通过下面这个地址访问：
+项目已上线，可以直接通过下面这个地址访问：
 
 [在线打开可话花园](https://kehua.jackmeds.top/)
 
 如果你是第一次在手机上使用，推荐先把可话导出的文件夹压缩成一个 ZIP，再在网页里导入，这样兼容性和操作体验会更好。
+
+- [电脑端：导入已解压的文件夹](https://kehua.jackmeds.top/guide/import-folder.html)
+- [手机端：导入 ZIP 压缩包](https://kehua.jackmeds.top/guide/import-zip.html)
+- [本地存储、IndexedDB 与清除数据](https://kehua.jackmeds.top/guide/local-privacy.html)
+
+本项目是独立社区工具，与原可话服务没有官方隶属关系。它只能查看你已经持有的导出内容，不能恢复未导出或已丢失的数据。请勿把个人导出包提交到公开仓库；公开网站提供工具，不托管你的个人回忆。网站使用 Cloudflare Web Analytics 收集匿名访问与性能指标，导入内容不参与统计。
 
 ## 本地运行
 
